@@ -51,8 +51,14 @@ offering within its limits. GitHub Actions uses a standard Linux runner: free
 for public repositories, and generally within the included allowance for
 occasional updates to a private business website, depending on other account
 usage. Claude Code access requires an eligible paid plan or paid API usage.
-Domains, external booking/form services, and usage beyond free allowances may
-cost money.
+Domain registrars, booking/form providers, and cloud services may charge for
+their services or usage beyond free allowances. Those are provider fees, not
+charges from this starter's author.
+
+Want a feature that is not included? Ask your assistant to help plan, build,
+and test it in your own site. You do not need to contact the starter's author
+or buy a feature upgrade. Your assistant should explain any outside service
+fees before you agree; your AI plan or API usage still applies.
 
 ### Why these tools?
 

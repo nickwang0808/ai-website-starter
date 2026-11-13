@@ -57,8 +57,27 @@ service descriptions, an introduction, answers to common questions, and an
 email, phone, or booking link.
 
 The included site is not a shop, customer portal, or application with user
-accounts. Those features need additional services and decisions. Linking to an
-existing booking or commerce service can be much simpler than building one.
+accounts. If you want those features, ask your assistant to help plan and build
+them in your website project. It should explain what needs to change and whether
+an existing service would be simpler than a custom implementation.
+
+### What if I want a feature that is not included?
+
+Ask your assistant. This is an editable starting point, not a fixed package of
+features with paid upgrades from the starter's author. You do not need to
+contact the author to request or approve changes to your own site.
+
+Describe the outcome you want, such as “add a booking calendar” or “let visitors
+send an enquiry.” Your assistant should explain the options, implement the
+approach you agree on, and help you test it before publication. Some features
+need services, accounts, or specialist review; the assistant should explain
+those requirements rather than promise that every request is a simple edit.
+
+**Extra development work and provider fees are different things.** Asking the
+assistant to add a feature does not create a fee from this starter. Your AI
+plan or API usage still applies, and any outside service may have its own
+pricing. The assistant should identify who would charge you and for what
+before you agree to a paid service.
 
 ### Do I own the website? Can I leave this setup later?
 
@@ -88,8 +107,11 @@ Moving still requires configuring the new host, publishing process, and domain.
   before enabling paid usage.
 - **AI assistance:** Claude Code requires eligible paid access or API billing.
   A free browser-chat account is not a substitute for local coding access.
-- **Optional extras:** a custom domain, business email, booking tools, form
-  services, paid assets, or added functionality may have separate charges.
+- **Optional providers and purchases:** domain registrars, email providers,
+  booking or form services, and asset sellers may charge for their products.
+  These are payments to those providers, not fees to the starter's author
+  for adding a feature. Ask your assistant to compare suitable free and paid
+  options before you choose.
 
 Providers can change plans and limits. Your assistant should check current
 pricing before you approve a paid service. Free hosting is not a promise that
@@ -121,8 +143,9 @@ This is more specific than saying that a small business will stay below a
 traffic allowance. Serving these static files does not become paid merely
 because more people visit.
 
-If you add code that runs on Cloudflare's servers, a database, or other
-services, different limits and prices may apply. The
+If you ask your assistant to add code that runs on Cloudflare's servers, a
+database, or other services, it should check which Cloudflare limits and
+provider fees would apply. The
 [Workers Paid plan](https://developers.cloudflare.com/workers/platform/pricing/)
 currently has a **$5 USD monthly minimum**, with additional usage charges
 possible. That is not a maximum bill or the price of every Cloudflare product.
@@ -305,8 +328,9 @@ A noindex instruction is not password protection or a privacy boundary.
 
 This is a technical foundation, not a complete SEO campaign or a promise of
 rankings. Clear, relevant content, useful pages, local business information,
-and the site's reputation still matter. Adding structured data or other SEO
-features is separate work, not something to assume is already included.
+and the site's reputation still matter. Ask your assistant to help add
+structured data or other SEO features when you need them; they are not already
+included simply because the site uses Astro.
 
 ### Why check phones, keyboard navigation, and readability?
 
@@ -343,9 +367,11 @@ A normal link is the simplest starting point. It does not load the booking
 provider's widget or scripts into your website, and the provider handles the
 booking experience after the visitor follows the link.
 
-An embedded calendar can be added if you want it, but it needs a separate
-review of loading speed, phone layout, accessibility, and privacy implications.
-An embed is optional, not required to accept bookings.
+If you want an embedded calendar, ask your assistant to add it and check
+loading speed, phone layout, accessibility, and privacy implications with you.
+An embed is optional, not required to accept bookings. The booking provider's
+plan determines any service fees; embedding it is a change to discuss with
+your assistant, not an upgrade to buy from the starter's author.
 
 ### Why start with email, phone, or a booking link instead of a contact form?
 
@@ -355,8 +381,9 @@ opens the provider's page.
 
 A form needs somewhere to securely receive, validate, and deliver submissions,
 plus spam handling and decisions about personal data. A form that only looks
-finished can silently lose enquiries. If you need one, approve a submission
-service and have it implemented and tested before publication.
+finished can silently lose enquiries. If you need one, ask your assistant to
+help choose a submission service, explain any provider fees, and implement
+and test it after you approve the approach.
 
 ### Why no database, CMS, or analytics by default?
 
@@ -368,7 +395,8 @@ permissions, and things to maintain.
 Analytics can help answer real business questions, but also introduces
 measurement and privacy decisions. None is added by default. If you need
 frequent editing by a team, stored customer data, or visitor measurement,
-discuss that requirement rather than adding infrastructure speculatively.
+ask your assistant to explain the options and help build the solution you
+choose rather than adding infrastructure speculatively.
 
 ### How does the assistant remember my business next time?
 
