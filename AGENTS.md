@@ -1,9 +1,22 @@
 # Repository instructions
 
+## Product documentation
+
+- Treat every tracked file as part of a distributable product.
+- Write documentation for owners, their assistants, or contributors: explain
+  capabilities, requirements, usage, and maintenance.
+- Keep internal conversations, development status reports, release deliberations,
+  and maintainer approval history in the development conversation, not product files.
+- Keep `docs/PROJECT.md` as a clean owner-site context template in the starter.
+  Populate it with the owner's project facts when working in their site copy,
+  not with the starter team's development activity.
+- State practical limitations accurately. Do not replace internal caveats with
+  fabricated claims that a feature or workflow has been verified.
+
 ## Owner experience
 
 - Follow `docs/PLAYBOOK.md`. Read `docs/PROJECT.md` at the start and update it with
-  confirmed facts, decisions, current stage, and the next action.
+  confirmed owner-site facts, decisions, current stage, and the next action.
 - Ask a few approachable questions at a time. Explain the next action and what
   success looks like; verify it before continuing.
 - Distinguish owner-site publication from releasing this starter. Neither an

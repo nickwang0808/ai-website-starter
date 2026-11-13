@@ -15,9 +15,9 @@ Open the extracted folder containing `package.json`, not the ZIP itself or its
 parent folder. This route needs no GitHub account for a public starter and does
 not inherit a remote that could accidentally push to the starter repository.
 
-During the private pilot, an authorized maintainer must provide access or an
-authorized archive. Do not change repository visibility. Keep this starter
-separate from any existing business/client repository.
+If using a private copy, sign into GitHub with an account that has access before
+downloading. Keep the new website in its own folder, separate from existing
+business or client projects.
 
 ## 2. Install Node.js 24 LTS
 

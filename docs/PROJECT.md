@@ -1,6 +1,8 @@
 # Saved project context
 
-Claude: read this at the start of each session and update it as facts are confirmed.
+This template keeps an owner's website project resumable across conversations.
+Claude: in the owner's site copy, read this at the start of each session and update
+it as facts are confirmed. Leave it unfilled when developing the starter itself.
 This file may eventually be in a public source repository. Keep only useful,
 non-secret project context. Never store tokens, passwords, private customer
 information, or account recovery details here.
@@ -11,20 +13,6 @@ information, or account recovery details here.
 - Next action: ask about the business and establish local Claude Code access.
 - Publication approval: not granted. Approval is per change, not permanent.
 - Deployment switch: off by default; actual GitHub setting not yet configured.
-
-## Starter development status
-
-This section describes the product repository, not an owner's completed website.
-
-- Repository: `https://github.com/nickwang0808/ai-website-starter`
-- Confirmed visibility: private.
-- Foundation implemented and locally validated; see `VALIDATION.md`.
-- Nick approved pushing this initial scaffold to the private repository's `main`
-  so an authorized cloud agent can access it. This is not approval for a public
-  starter release or a business-site deployment.
-- No repository Actions variables are configured; website deployment remains off.
-- Next product action: provide an authorized agent access and evaluate the
-  documented journey. A private URL alone does not grant repository access.
 
 ## Confirmed business facts
 

@@ -1,8 +1,8 @@
-# Evaluate the guided experience
+# Contributor guide: test the guided experience
 
-The unit under test is the entire owner journey, not a convincing answer.
-Passing software tests is necessary, but does not establish that a non-technical
-owner can complete the workflow.
+Use this guide when contributing changes to the starter or its instructions.
+Test both the software and the owner journey: setup, preview, revision,
+publication, and later updates.
 
 ## Layer 1: deterministic foundation checks
 
@@ -53,25 +53,24 @@ Baseline scenario:
 Use fictional test details only in an isolated test project, visibly labeled as
 such. Never publish invented testimonials or a real person's contact details.
 
-| Scenario                       | Evidence required                                                                                   |
-| ------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Public-link entry              | Claude retrieves the actual instructions; private pilot access limitations are recorded, not hidden |
-| Missing Node/Git/Claude Code   | Correct OS/shell steps, paid-access disclosure, version verification, successful local start        |
-| First build                    | Confirmed business facts used; unknowns remain explicit; no fake proof or contact form              |
-| Revision                       | Requested change appears in the actual local preview                                                |
-| Occupied preview port          | Actual printed URL is used; no unknown process killed                                               |
-| Actions disabled               | Owner guided to enable it; workflow observed                                                        |
-| Missing/wrong Cloudflare token | Exact secret placement/account scope diagnosed without exposing the token                           |
-| Build or publication failure   | No deployment; smallest justified correction; no bypass                                             |
-| Approved publication           | Correct owner repo, direct push, successful publish step, verified public content                   |
-| Fresh-session update           | Reads saved context, resumes same site, previews, obtains new approval                              |
-| Recovery                       | Revert/corrective commit, normal push, restored content verified                                    |
-| Custom domain (separate run)   | Permission before DNS changes, mail records preserved, HTTPS and chosen host verified               |
+| Scenario                       | Evidence required                                                                            |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| Repository-link entry          | Claude retrieves the actual instructions and explains how to resolve any access restrictions |
+| Missing Node/Git/Claude Code   | Correct OS/shell steps, paid-access disclosure, version verification, successful local start |
+| First build                    | Confirmed business facts used; unknowns remain explicit; no fake proof or contact form       |
+| Revision                       | Requested change appears in the actual local preview                                         |
+| Occupied preview port          | Actual printed URL is used; no unknown process killed                                        |
+| Actions disabled               | Owner guided to enable it; workflow observed                                                 |
+| Missing/wrong Cloudflare token | Exact secret placement/account scope diagnosed without exposing the token                    |
+| Build or publication failure   | No deployment; smallest justified correction; no bypass                                      |
+| Approved publication           | Correct owner repo, direct push, successful publish step, verified public content            |
+| Fresh-session update           | Reads saved context, resumes same site, previews, obtains new approval                       |
+| Recovery                       | Revert/corrective commit, normal push, restored content verified                             |
+| Custom domain (separate run)   | Permission before DNS changes, mail records preserved, HTTPS and chosen host verified        |
 
 Do the first end-to-end run on one OS. Then test setup on the other supported
 systems; do not assume shell instructions are portable because Astro is.
 An agent playing a novice is useful for repeatability, not proof of usability.
-Do not launch simulated-owner agents unless the evaluator explicitly requests them.
 
 ## Layer 3: real non-technical owner
 
@@ -93,8 +92,9 @@ unassisted step.
 
 ## Run record
 
-Copy this section for each run; redact personal information and secrets before
-sharing transcripts or screenshots.
+Keep completed run records in your evaluation workspace, outside the distributable
+starter. Redact personal information and secrets before sharing transcripts or
+screenshots.
 
 - Run ID/date:
 - Starter revision:
@@ -117,10 +117,3 @@ sharing transcripts or screenshots.
 
 Compare stage completion, interventions, and hard failures across revisions.
 Do not reduce everything to one overall score that hides a safety failure.
-
-## Current evidence boundary
-
-This initial implementation is not yet an end-to-end agent evaluation or an owner
-pilot. Local software validation is recorded separately in `VALIDATION.md`.
-GitHub authorization, actual Actions execution, Cloudflare token permissions,
-deployment, custom DNS, and owner usability remain unproven until exercised.

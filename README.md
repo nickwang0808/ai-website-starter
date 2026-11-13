@@ -5,10 +5,6 @@ about your business into a site you can preview, refine, publish, and maintain.
 You make the business decisions. Claude works with the engineering decisions
 already made here.
 
-**Status: private development prototype.** The local software can be tested now;
-the complete non-technical-owner journey still needs a pilot. This repository must
-not be made public without the maintainer's explicit approval.
-
 ## Start here
 
 Paste this repository's link into Claude with:
@@ -18,9 +14,8 @@ Paste this repository's link into Claude with:
 > at a time. Assume I'm not a developer. We will review the site locally before
 > publishing anything.
 
-If Claude cannot read this private repository, give it the README and instruction
-files through your authorized local copy or attachments. A private link by itself
-does not grant access. Don't make the repository public just to get around this.
+If Claude cannot open the link, download the repository and open its folder in
+Claude Code, or attach the README and linked instructions to your conversation.
 
 ### What you will need
 
@@ -99,9 +94,7 @@ See [architecture and upstream provenance](docs/UPSTREAM.md).
 - [Updates, recovery, and troubleshooting](docs/MAINTENANCE.md)
 - [Saved project context](docs/PROJECT.md)
 - [Evaluation scenarios and run template](docs/EVALUATION.md)
-- [Product handoff](HANDOFF.md)
 
 ## License
 
 [MIT](LICENSE.md). AstroWind's required onWidget copyright notice is retained.
-An open-source license does not change this repository's current private visibility.
