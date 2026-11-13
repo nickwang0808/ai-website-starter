@@ -19,9 +19,20 @@ required reading before you start.
 
 ### Why use this starter instead of asking AI to make a website from scratch?
 
-The starter supplies a working site, a chosen set of tools, checks, and a
-publishing procedure. Your assistant can spend its effort understanding your
-business and adapting the site rather than inventing a new technical setup.
+This starter is designed by a senior developer, so you begin with deliberate
+engineering decisions rather than asking AI to choose everything from scratch.
+The tools, website architecture, and publishing workflow are selected to give
+a business website a fast-loading foundation that is straightforward to build,
+customize, and maintain.
+
+Those decisions are built into the repository: lightweight pages, reusable
+design components, consistent dependency versions, automated checks, and a
+documented path to publication. The goal is strong performance and a simpler
+development experience without unnecessary infrastructure or services.
+
+Your assistant follows that foundation and spends its effort understanding
+your business and adapting the site. You do not need to evaluate frameworks,
+design a deployment system, or know which technical questions to ask.
 
 It is a starting point, not a requirement that every business look the same.
 You can change the wording, colors, layout, and sections with your assistant.
