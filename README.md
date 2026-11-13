@@ -1,5 +1,9 @@
 # Build your business website with Claude
 
+![Morrow & Form sample homepage, with an oversized typographic hero and the start of its lime identity graphic](docs/images/morrow-and-form-preview.png)
+
+[Built with this starter — see the full homepage, creative brief, and reference sites →](docs/EXAMPLE.md)
+
 A working website foundation and a step-by-step playbook for turning a conversation
 about your business into a site you can preview, refine, publish, and maintain.
 You make the business decisions. Claude works with the engineering decisions
@@ -31,12 +35,6 @@ step, including setup when it is needed.
 The scaffold deliberately uses bracketed placeholders, not fictional testimonials,
 credentials, or business claims. Deployment is **off by default**, and publication
 checks reject incomplete starter content.
-
-## See an example
-
-[Explore the Morrow & Form homepage example](docs/EXAMPLE.md): a full-page screenshot
-of a fictional creative-agency site, the reference websites and creative direction
-given to the agent, and what it produced using this starter.
 
 ## Requirements and costs
 
