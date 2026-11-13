@@ -79,8 +79,11 @@ Moving still requires configuring the new host, publishing process, and domain.
 - **Hosting:** the default static-site path uses Cloudflare's free offering.
   See the hosting explanation below for the distinction between static files
   and paid services.
-- **Source storage and automation:** GitHub has free offerings, but Actions
-  usage has plan-dependent allowances, particularly for private repositories.
+- **Source storage and automation:** GitHub offers free repositories. This
+  starter uses a standard Linux runner for GitHub Actions, which is free for
+  public repositories. For a private repository, occasional business-website
+  updates should generally fit within the plan's included allowance, depending
+  on build time and the account's other usage. Storage has separate allowances.
   Review [GitHub's billing guidance](https://docs.github.com/en/billing/concepts/product-billing/github-actions)
   before enabling paid usage.
 - **AI assistance:** Claude Code requires eligible paid access or API billing.
@@ -157,6 +160,12 @@ This avoids relying on someone remembering a sequence of manual uploads.
 You may hear this called **CI/CD**: automated checking and delivery of changes.
 Checks can catch some mistakes before they reach visitors, but cannot verify
 your business claims or replace your review of the page.
+
+For this workflow, Actions runs when you push an update or manually start a
+run, not every time a customer visits. Occasional updates therefore need much
+less automation usage than frequent development builds. Standard runner use
+is free for public repositories; private repositories use the account's
+included allowance, as described in the costs section above.
 
 ### Why preview on my computer? Why not publish every change immediately?
 

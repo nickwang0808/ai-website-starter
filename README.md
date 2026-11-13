@@ -47,9 +47,12 @@ the necessary steps using [the computer setup guide](docs/SETUP.md):
   walks through GitHub CLI for browser-based sign-in and direct pushes.
 
 This starter is free software; the default hosting path uses Cloudflare's free
-offering within its limits. Claude Code access requires an eligible paid plan or
-paid API usage. Domains, external booking/form services, and usage beyond free
-limits may cost money.
+offering within its limits. GitHub Actions uses a standard Linux runner: free
+for public repositories, and generally within the included allowance for
+occasional updates to a private business website, depending on other account
+usage. Claude Code access requires an eligible paid plan or paid API usage.
+Domains, external booking/form services, and usage beyond free allowances may
+cost money.
 
 ### Why these tools?
 
