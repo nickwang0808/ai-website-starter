@@ -9,7 +9,7 @@ already made here.
 
 Paste this into Claude:
 
-> Help me build a website using this repository: https://github.com/nickwang0808/ai-website-starter
+> Help me build our website using this link: https://github.com/nickwang0808/ai-website-starter
 
 That's all you need to provide to get started. You don't need a technical brief,
 a special prompt, or a list of files for Claude to read. The repository contains
