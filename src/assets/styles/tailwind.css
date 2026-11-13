@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* AstroWind's semantic theme tokens, reduced to this static starter's needs.
+   Change the palette here rather than sprinkling colors through the pages. */
+:root {
+  --aw-color-primary: #24594b;
+  --aw-color-secondary: #163e34;
+  --aw-color-text-heading: #183c32;
+  --aw-color-text-default: #263d35;
+  --aw-color-text-muted: #52645c;
+  --aw-color-bg-page: #faf9f5;
+}
+
+@theme {
+  --color-primary: var(--aw-color-primary);
+  --color-secondary: var(--aw-color-secondary);
+  --color-heading: var(--aw-color-text-heading);
+  --color-default: var(--aw-color-text-default);
+  --color-muted: var(--aw-color-text-muted);
+  --font-sans: 'Segoe UI', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background: var(--aw-color-bg-page);
+    color: var(--aw-color-text-default);
+    overflow-wrap: anywhere;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--aw-color-primary);
+    outline-offset: 5px;
+  }
+
+  a,
+  summary {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@utility btn {
+  @apply inline-flex min-h-12 items-center justify-center rounded-full border px-6 py-3 text-center text-base font-semibold transition-colors;
+}
+
+@utility btn-primary {
+  @apply btn border-primary bg-primary text-white hover:bg-secondary hover:border-secondary;
+}
+
+@utility btn-secondary {
+  @apply btn border-primary/30 text-primary hover:bg-primary/5;
+}

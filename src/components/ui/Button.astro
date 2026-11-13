@@ -1,0 +1,16 @@
+---
+// Adapted from AstroWind. This site's CTAs are links, not nonfunctional form buttons.
+import { twMerge } from 'tailwind-merge';
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  variant?: 'primary' | 'secondary';
+}
+
+const { variant = 'primary', class: className, ...rest } = Astro.props;
+const variants = { primary: 'btn-primary', secondary: 'btn-secondary' };
+---
+
+<a class={twMerge(variants[variant], className)} {...rest}>
+  <slot />
+</a>

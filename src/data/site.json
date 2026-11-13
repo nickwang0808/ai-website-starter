@@ -1,0 +1,57 @@
+{
+  "publishReady": false,
+  "url": "",
+  "language": "en",
+  "name": "[Your business name]",
+  "description": "[Describe your service, who it helps, and where you work.]",
+  "eyebrow": "[Your service area]",
+  "headline": "[The clear benefit you bring to your customers.]",
+  "intro": "[Explain what you do in one or two welcoming sentences. Use your own words.]",
+  "contact": {
+    "label": "[Your preferred contact action]",
+    "href": "",
+    "note": "[Tell people what to include when they get in touch.]"
+  },
+  "services": [
+    {
+      "title": "[Your first service]",
+      "description": "[Who this service is for and what it includes.]"
+    },
+    {
+      "title": "[Your second service]",
+      "description": "[Explain another way you help your customers.]"
+    },
+    {
+      "title": "[Your third service]",
+      "description": "[Describe the outcome without inventing results or guarantees.]"
+    }
+  ],
+  "about": {
+    "title": "[A little about your business]",
+    "description": "[Share your real story, approach, and what customers should know.]"
+  },
+  "steps": [
+    {
+      "title": "[How customers start]",
+      "description": "[Explain the first step in working with you.]"
+    },
+    {
+      "title": "[What happens next]",
+      "description": "[Explain how you agree on the work.]"
+    },
+    {
+      "title": "[How you deliver]",
+      "description": "[Explain what the customer can expect.]"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "[A question your customers often ask]",
+      "answer": "[An accurate, straightforward answer.]"
+    },
+    {
+      "question": "[Another useful question]",
+      "answer": "[Only include information the business owner has confirmed.]"
+    }
+  ]
+}

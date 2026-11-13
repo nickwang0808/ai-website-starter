@@ -152,3 +152,22 @@ Record where assistance is needed. Improve the guidance wherever the difficulty 
 - How updates, rollback, and ongoing maintenance are explained.
 
 Do not expand this into a platform or custom website editor before validating the simple repository-guided experience.
+
+## Decisions confirmed after this handoff
+
+- Ship a runnable, dependency-configured scaffold, not only prompts for creating one.
+- The repository includes an operational playbook: Claude checks prerequisites,
+  explains the next step, and verifies it before proceeding.
+- Preview is local on the owner's computer, not a cloud preview deployment.
+- Claude guides Node installation and the local tooling needed to edit, run, and
+  save the site. TypeScript is a project dependency, not a separate global install.
+- GitHub Actions is preconfigured. Account setup includes enabling Actions,
+  creating a scoped Cloudflare API token, and putting it directly in GitHub secrets.
+- Publication uses approved direct pushes to the owner's `main` branch, with
+  checks before deployment. No pull-request workflow.
+- Evaluate both the deterministic foundation and the Claude-guided owner journey.
+  A successful local build is not evidence of an unassisted end-to-end experience.
+
+The initial implementation chooses local Claude Code and Cloudflare Workers
+static assets as the concrete route. These are documented implementation choices,
+not a claim that account setup or the non-technical-owner pilot has been validated.

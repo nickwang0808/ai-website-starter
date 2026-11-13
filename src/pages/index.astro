@@ -1,0 +1,101 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Button from '../components/ui/Button.astro';
+import Headline from '../components/ui/Headline.astro';
+import WidgetWrapper from '../components/ui/WidgetWrapper.astro';
+import site from '../data/site.json';
+---
+
+<PageLayout>
+  <section class="mx-auto grid max-w-7xl gap-12 px-5 pt-12 pb-20 md:px-8 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+    <div>
+      <p class="mb-6 text-sm font-bold tracking-widest text-secondary uppercase">{site.eyebrow}</p>
+      <h1 class="max-w-4xl font-heading text-4xl leading-[1.12] tracking-tight text-heading text-balance md:text-6xl">
+        {site.headline}
+      </h1>
+      <p class="mt-7 max-w-xl text-lg leading-relaxed text-muted">{site.intro}</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <Button href="#contact">Let's talk</Button>
+        <Button href="#services" variant="secondary">
+          Explore our services
+        </Button>
+      </div>
+    </div>
+    <div class="relative rounded-[2rem] border border-primary/15 bg-primary/5 p-8 md:p-12">
+      <span aria-hidden="true" class="mb-10 block font-heading text-6xl text-primary">
+        ✳
+      </span>
+      <p class="text-xs font-bold tracking-widest text-secondary uppercase">At a glance</p>
+      <ul class="mt-6 divide-y divide-primary/15">
+        {site.services.map((service) => (
+          <li class="py-4 font-heading text-xl">{service.title}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <WidgetWrapper id="services">
+    <div slot="bg" class="absolute inset-0 bg-white"></div>
+    <Headline title="How we can help" tagline="Our services" />
+    <div class="grid gap-6 md:grid-cols-3">
+      {site.services.map((service, index) => (
+        <article class="rounded-2xl border border-primary/15 p-7 md:p-8">
+          <p class="mb-8 text-sm text-muted" aria-hidden="true">
+            {String(index + 1).padStart(2, '0')}
+          </p>
+          <h3 class="font-heading text-2xl text-heading">{service.title}</h3>
+          <p class="mt-4 leading-relaxed text-muted">{service.description}</p>
+        </article>
+      ))}
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="about" containerClass="max-w-5xl">
+    <Headline title={site.about.title} tagline="About us" />
+    <p class="mx-auto max-w-3xl text-center text-lg leading-relaxed text-muted">
+      {site.about.description}
+    </p>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="process">
+    <div slot="bg" class="absolute inset-0 bg-primary/5"></div>
+    <Headline title="What working together looks like" tagline="The next steps" />
+    <ol class="grid gap-10 md:grid-cols-3">
+      {site.steps.map((step, index) => (
+        <li>
+          <span class="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+            {index + 1}
+          </span>
+          <h3 class="font-heading text-2xl text-heading">{step.title}</h3>
+          <p class="mt-3 leading-relaxed text-muted">{step.description}</p>
+        </li>
+      ))}
+    </ol>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="questions" containerClass="max-w-4xl">
+    <Headline title="A few helpful answers" tagline="Common questions" />
+    <div class="divide-y divide-primary/20 border-y border-primary/20">
+      {site.faqs.map((faq) => (
+        <details class="py-5">
+          <summary class="cursor-pointer py-2 pr-4 text-lg font-semibold">{faq.question}</summary>
+          <p class="pt-3 pb-2 leading-relaxed text-muted">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="contact">
+    <div class="rounded-[2rem] border border-primary/20 bg-white px-6 py-12 text-center md:p-16">
+      <Headline title="Let's talk about what you need" subtitle={site.contact.note} />
+      {site.contact.href ? (
+        <Button href={site.contact.href}>{site.contact.label}</Button>
+      ) : (
+        <p class="mx-auto max-w-lg rounded-xl bg-primary/5 p-5 text-muted">
+          Your contact link will appear here once you choose an email address, phone number, or
+          booking page with Claude. No form submissions are collected by this starter.
+        </p>
+      )}
+    </div>
+  </WidgetWrapper>
+</PageLayout>

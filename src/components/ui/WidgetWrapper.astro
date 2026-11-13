@@ -1,0 +1,25 @@
+---
+// Adapted from AstroWind; no animation script is required to reveal content.
+import { twMerge } from 'tailwind-merge';
+
+interface Props {
+  id: string;
+  containerClass?: string;
+}
+
+const { id, containerClass = '' } = Astro.props;
+---
+
+<section id={id} class="relative scroll-mt-8">
+  <div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
+    <slot name="bg" />
+  </div>
+  <div
+    class={twMerge(
+      'relative mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24 text-default',
+      containerClass,
+    )}
+  >
+    <slot />
+  </div>
+</section>
