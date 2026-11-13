@@ -42,6 +42,8 @@ Confirm failed checks prevent deployment, then verify a real deployment, update,
 Start with only the repository link and README opening prompt. No hidden briefing
 or maintainer coaching. The runner/person playing the owner has a private scenario
 card; Claude should discover its facts through the conversation.
+Do not add instruction-file names, technical setup directions, or a reminder to
+follow the playbook to the owner's prompt. Finding those is part of the evaluation.
 
 Baseline scenario:
 

@@ -7,39 +7,19 @@ already made here.
 
 ## Start here
 
-Paste this repository's link into Claude with:
+Paste this into Claude:
 
-> Help me build my business website using this starter. Read the README, then
-> CLAUDE.md and the linked playbook. Ask about my business and guide me one step
-> at a time. Assume I'm not a developer. We will review the site locally before
-> publishing anything.
+> Help me build a website using this repository: https://github.com/nickwang0808/ai-website-starter
 
-If Claude cannot open the link, download the repository and open its folder in
-Claude Code, or attach the README and linked instructions to your conversation.
-
-### What you will need
-
-- A computer and a browser. The preview runs on **your computer**, not a cloud service.
-- **Node.js 24 LTS**, which includes npm, to run the website. TypeScript and the
-  other website tools are installed automatically with the project.
-- **Git** to save versions, and **Claude Code running locally** to let Claude edit
-  files and run commands. Regular Claude chat can guide setup, but reading a link
-  alone does not give it access to your computer.
-- Later: your own GitHub and Cloudflare accounts. The publishing guide also
-  walks through GitHub CLI for browser-based sign-in and direct pushes.
-
-You do not need to understand these tools before starting. Ask Claude to follow
-[the computer setup guide](docs/SETUP.md) with you.
-
-**Cost:** this starter is free software; the default hosting path uses Cloudflare's
-free offering within its limits. Claude Code access requires an eligible paid plan
-or paid API usage. Domains, external booking/form services, and usage beyond free
-limits may cost money. This is not a promise of a zero-cost AI account.
+That's all you need to provide to get started. You don't need a technical brief,
+a special prompt, or a list of files for Claude to read. The repository contains
+the instructions for Claude to ask about your business and guide you through each
+step, including setup when it is needed.
 
 ## What happens next?
 
-1. Claude helps set up your computer and asks about your business, audience,
-   services, contact preferences, branding, and reference sites.
+1. Claude asks about your business, services, contact preferences, branding, and
+   reference sites, then guides the computer setup needed for your local preview.
 2. It customizes the included site and opens a local preview.
 3. You ask for changes until you are happy with it.
 4. Claude guides GitHub, Cloudflare, and optionally domain setup.
@@ -52,12 +32,40 @@ The scaffold deliberately uses bracketed placeholders, not fictional testimonial
 credentials, or business claims. Deployment is **off by default**, and publication
 checks reject incomplete starter content.
 
+## Requirements and costs
+
+You don't need to set these up before starting the conversation. Claude guides
+the necessary steps using [the computer setup guide](docs/SETUP.md):
+
+- A computer and a browser. The preview runs on **your computer**, not a cloud service.
+- **Node.js 24 LTS**, which includes npm, to run the website. TypeScript and the
+  other website tools are installed automatically with the project.
+- **Git** to save versions, and **Claude Code running locally** to let Claude edit
+  files and run commands. Regular Claude chat can guide setup, but reading a link
+  alone does not give it access to your computer.
+- Later: your own GitHub and Cloudflare accounts. The publishing guide also
+  walks through GitHub CLI for browser-based sign-in and direct pushes.
+
+This starter is free software; the default hosting path uses Cloudflare's free
+offering within its limits. Claude Code access requires an eligible paid plan or
+paid API usage. Domains, external booking/form services, and usage beyond free
+limits may cost money.
+
 ## Instructions for Claude and other coding assistants
 
-Read [CLAUDE.md](CLAUDE.md), [AGENTS.md](AGENTS.md), and
+The owner's repository link and request to build a site are the complete starting
+brief. Do not require them to name instruction files, compose a detailed prompt,
+or choose a technology stack.
+
+Retrieve and read [CLAUDE.md](CLAUDE.md), [AGENTS.md](AGENTS.md), and
 [docs/PLAYBOOK.md](docs/PLAYBOOK.md) before guiding the owner. Follow the stage-specific
-links from the playbook. If a linked file cannot be read, say so and ask for access;
-do not pretend its contents are known.
+links yourself rather than asking the owner to study the documentation. Begin with
+a few approachable business questions and introduce setup steps when needed.
+
+If you cannot access the repository, explain the access problem and guide the
+owner to authorize access, open a downloaded copy in local Claude Code, or attach
+the needed instructions. Do not pretend unread files are known or assume a link
+grants local editing capabilities.
 
 ## For developers
 

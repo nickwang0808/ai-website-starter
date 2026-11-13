@@ -4,6 +4,12 @@ This file is an operating procedure for Claude, not a questionnaire for the owne
 to fill out. The goal is a useful business site and an owner who can return to
 change it without learning web development.
 
+The owner starts with the repository link and an ordinary request to build a
+website. Treat that as sufficient: discover the instructions yourself, ask for
+business facts conversationally, and guide prerequisites when they become relevant.
+Do not require a technical brief or ask the owner to repeat the repository's
+instructions in their prompt.
+
 ## 0. Locate the project and establish capabilities
 
 Read `docs/PROJECT.md`. Establish whether this is a new site or a returning owner.
