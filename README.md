@@ -51,6 +51,14 @@ offering within its limits. Claude Code access requires an eligible paid plan or
 paid API usage. Domains, external booking/form services, and usage beyond free
 limits may cost money.
 
+### Why these tools?
+
+Read the [business owner's FAQ](docs/FAQ.md) for plain-language answers about
+Cloudflare's free hosting, GitHub, website ownership, costs, speed, search engines,
+and the tools behind the site. It also explains how to use a Cal.com or Calendly
+booking link without building a booking system. You do not need to read it all
+before starting; your assistant can explain each choice when it becomes relevant.
+
 ## Instructions for Claude and other coding assistants
 
 The owner's repository link and request to build a site are the complete starting
@@ -96,6 +104,7 @@ See [architecture and upstream provenance](docs/UPSTREAM.md).
 
 ### Documentation
 
+- [Business owner's FAQ: why this approach?](docs/FAQ.md)
 - [Owner-guidance playbook](docs/PLAYBOOK.md)
 - [Computer setup and local preview](docs/SETUP.md)
 - [Publishing and domain setup](docs/DEPLOY.md)
