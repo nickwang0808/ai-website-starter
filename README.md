@@ -32,6 +32,12 @@ The scaffold deliberately uses bracketed placeholders, not fictional testimonial
 credentials, or business claims. Deployment is **off by default**, and publication
 checks reject incomplete starter content.
 
+## See an example
+
+[Explore the Morrow & Form homepage example](docs/EXAMPLE.md): a full-page screenshot
+of a fictional creative-agency site, the reference websites and creative direction
+given to the agent, and what it produced using this starter.
+
 ## Requirements and costs
 
 You don't need to set these up before starting the conversation. Claude guides
